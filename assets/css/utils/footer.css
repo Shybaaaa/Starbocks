@@ -1,0 +1,79 @@
+/* Footer Starbucks */
+@font-face {
+	font-family: SodoSemiBold;
+	src: url(../../font/SodoSemiBold.ttf);
+}
+
+/* Le CSS pour le pied de page. */
+.footer {
+    position: relative;
+    z-index: 999;
+    background-color: #1e3932;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: 'SodoSemiBold', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.footer-logo a img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer-logo {
+    transform: translateY(-60%);
+    position: relative;
+    z-index: 999;
+}
+
+.footer-logoSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.footer-logoSocial li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.footer-logoSocial li svg {
+    transition: .20s ease;
+    fill: rgba(255, 255, 255, 0.4);
+}
+
+.footer-logoSocial li svg:hover {
+    transition: .20s ease;
+    fill: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+}
+
+.footer-links li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: .20s ease;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.footer-links li a:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: .20s ease;
+}
+

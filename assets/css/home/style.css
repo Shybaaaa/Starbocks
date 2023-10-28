@@ -1,0 +1,205 @@
+/* font : https://fonts.google.com/ */
+
+/* SodoSemiBold */
+@font-face {
+	font-family: SodoSemiBold;
+	src: url(../../font/SodoSemiBold.ttf);
+}
+
+/* SodoSansRegular */
+@font-face {
+	font-family: SodoSansRegular;
+	src: url(../../font/SodoSans-Regular.ttf);
+}
+
+/* LanderGrande */
+@font-face {
+	font-family: LanderGrandeRegular;
+	src: url(../../font/LanderGrandeRegular.otf);
+}
+
+/* Petite réinitialisation du css de base */
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+/* Code CSS */ 
+body {
+	font-family: 'SodoSemiBold', sans-serif;
+	overflow-x: hidden;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* Le code ci-dessous crée une image d'arrière-plan, du texte et une image de
+premier plan. */
+
+.hero {
+	background-image: url("../../img/hero/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	z-index: -1;
+}
+
+.hero-container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100vh;
+}
+
+.hero-text {
+	color: white;
+	text-align: left;
+	font-weight: 600;
+	font-size: 2.5rem;
+	position: absolute;
+	top: 55%;
+	left: 40%;
+	z-index: 0;
+	font-family: 'SodoSansRegular', sans-serif;
+	transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+	font-size: 2.3rem;
+	margin: 10px 0;
+	text-align: justify;
+	font-family: 'LanderGrandeRegular', sans-serif;
+	font-weight: 800;
+}
+
+.hero-text h3 {
+	width: 25%;
+	text-align: left;
+	font-size: 1.5rem;
+	font-family: 'LanderGrandeRegular', sans-serif;
+	font-weight: 400;
+}
+
+.hero-text p {
+	font-size: 1rem;
+	font-weight: normal;
+	width: 40%;
+	text-align: justify;
+	text-align-last: left;
+	margin-bottom: 2%;
+}
+
+.hero-img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: -1;
+	left: 50%;
+	top: 10%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+img {
+	-webkit-user-drag: none;
+}
+
+.infoTeaserWinter {
+	position: relative;
+	z-index: 20;
+	transition: .2s;
+	background-color: #006241;
+	color: snow;
+	padding: 20px;
+	text-align: center;
+	font-size: 1rem;
+	border: rgba(0, 0, 0, 0) 1px solid; 
+	border-radius: 30px;
+	font-weight: 200;
+	text-align: center;	
+	text-decoration: none;
+	text-align: center;
+}
+
+.infoTeaserWinter:hover {
+	transition: .2s;
+	background-color: #004931;
+	color: snow;
+	border: rgba(0, 0, 0, 0) 1px solid;
+}
+
+/* Le code ci-dessus crée une section pour la partie à propos. */
+
+.about {
+	background-color: #f2f0eb;
+	padding: 5% 10%;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about-text {
+	width: 50%;
+}
+
+.about-text h1 {
+	font-size: 2.3rem;
+	margin: 10px 0;
+	text-align: justify;
+	color: #1e3932;
+	font-family: 'LanderGrandeRegular', sans-serif;
+}
+
+.about-text h3 {
+	width: 80%;
+	color: #006241;
+	text-align: left;
+	font-size: 1.1rem;
+	font-family: 'LanderGrandeRegular', sans-serif;
+	font-weight: 200;
+}
+
+.about-text p {
+	font-size: 1rem;
+	font-weight: normal;
+	width: 80%;
+	color: #1e3932;
+	font-family: 'SodoSansRegular', sans-serif;
+	text-align: justify;
+	text-align-last: left;
+	margin-bottom: 13%;
+}
+
+.infoAbout {
+	position: relative;
+	z-index: 20;
+	transition: .2s;
+	background-color: #006241;
+	color: snow;
+	padding: 20px;
+	font-size: 1rem;
+	border: rgba(0, 0, 0, 0) 1px solid;
+	border-radius: 30px;
+	font-weight: 200;
+	text-align: center;
+	text-decoration: none;
+}
+
+.infoAbout:hover {
+	transition: .2s;
+	background-color: #004931;
+}

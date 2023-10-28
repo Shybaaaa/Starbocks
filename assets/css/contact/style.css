@@ -1,0 +1,134 @@
+/* SodoSemiBold */
+@font-face {
+    font-family: SodoSemiBold;
+    src: url(../../font/SodoSemiBold.ttf);
+}
+
+/* SodoSansRegular */
+@font-face {
+    font-family: SodoSansRegular;
+    src: url(../../font/SodoSans-Regular.ttf);
+}
+
+/* LanderGrande */
+@font-face {
+    font-family: LanderGrandeRegular;
+    src: url(../../font/LanderGrandeRegular.otf);
+}
+
+/* Petite réinitialisation du css de base */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/* Code CSS */
+body {
+    background-color: #f2f0eb;
+    font-family: 'SodoSemiBold', sans-serif;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+/* Le code ci-dessous crée un formulaire avec un bouton d'envoi. */
+.contact-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    margin-top: 5vh;
+}
+
+.form-group {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group label {
+    font-family: 'SodoSansRegular', sans-serif;
+    font-size: 1rem;
+    margin-right: 1vw;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-family: 'SodoSansRegular', sans-serif;
+    font-size: 1.2em;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: 'SodoSansRegular', sans-serif;
+    font-size: 1.2em;
+}
+
+button {
+    transition: .3s;
+    width: auto;
+    height: 60px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-family: 'SodoSansRegular', sans-serif;
+    font-size: 1.2em;
+    background-color: #006241;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: .3s;
+    background-color: #004931;
+}
+
+.contact-text h1 {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-family: 'SodoSemiBold', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contact-text p {
+    font-family: 'SodoSansRegular', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+

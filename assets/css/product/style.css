@@ -1,0 +1,117 @@
+/* SodoSemiBold */
+@font-face {
+    font-family: SodoSemiBold;
+    src: url(../../font/SodoSemiBold.ttf);
+}
+
+/* SodoSansRegular */
+@font-face {
+    font-family: SodoSansRegular;
+    src: url(../../font/SodoSans-Regular.ttf);
+}
+
+/* LanderGrande */
+@font-face {
+    font-family: LanderGrandeRegular;
+    src: url(../../font/LanderGrandeRegular.otf);
+}
+
+/* Petite réinitialisation du css de base */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/* Code CSS */
+body {
+    background-color: #f2f0eb;
+    font-family: 'SodoSemiBold', sans-serif;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Permet de créer les produits et mets ses informations en colonne. */
+.product-ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 100%;
+    height: 100%;
+
+}
+
+.product {
+    transition: .3s;
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+}
+.product-img img{
+    width: 70%;
+    height: auto;
+}
+
+.product-img {
+    transition: .4s;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.product:hover {
+    transition: .4s;
+    transform: scale(1.05);
+}
+
+.product-description {
+    display: flex;
+    flex-flow: column;
+    font-family: "SodoSansRegular", sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    width: 100%;
+}
+
+.product-title {
+    font-family: "LanderGrandeRegular", sans-serif;
+    font-size: 1.3em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 1.2em;
+    font-weight: 200;
+    text-align: center;
+    width: 60%;
+    margin-left: 40%;
+    margin-bottom: 2vh;
+}
+
+.product-buy a{
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-bottom: 2vh;
+    color: snow;
+    background-color: #006241;
+    padding: 1vh;
+    width: 35%;
+}
+
+.product-buy {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
